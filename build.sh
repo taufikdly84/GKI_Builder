@@ -9,7 +9,6 @@ trap 'echo "Build failed at line $LINENO. Exit code: $?" >&2' ERR
 
 # ── Environment setup ────────────────────────────────────────────────────────
 export ARCH=arm64
-export CC=clang
 export LLVM=1
 export LLVM_IAS=1
 export CROSS_COMPILE=aarch64-linux-gnu-
