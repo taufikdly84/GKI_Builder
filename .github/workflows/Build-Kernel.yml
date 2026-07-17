@@ -389,11 +389,4 @@ jobs:
           name: ${{ env.ZIP_NAME }}
           path: anykernel/*
           if-no-files-found: error
-      - name: 📤 Upload defconfig 
-        uses: actions/upload-artifact@v4
-        with:
-          name: gki_defconfig
-          path: kernel/out/arch/arm64/configs/gki_defconfig
-          if-no-files-found: error
-
       
